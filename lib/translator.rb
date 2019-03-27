@@ -7,7 +7,7 @@ def load_library(path)
 end
 
 def get_japanese_emoticon(path, emote)
-  # code goes here
+  hash = path
 end
 
 def get_english_meaning
