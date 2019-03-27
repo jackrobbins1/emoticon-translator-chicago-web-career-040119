@@ -14,10 +14,6 @@ def get_japanese_emoticon(path, emote)
   else
     return "Sorry, that emoticon was not found"
   end
-  # if hash["get_emoticon"][emote] == nil
-  #   return "Sorry, that emoticon was not found"
-  # end
-  hash["get_emoticon"][emote]
 
 end
 get_japanese_emoticon('/home/fortunate-checkpoint-8501/emoticon-translator-chicago-web-career-040119/lib/emoticons.yml', ">:(")
@@ -29,3 +25,4 @@ def get_english_meaning(path, emote)
   end
   hash["get_meaning"][emote]
 end
+get_japanese_emoticon('/home/fortunate-checkpoint-8501/emoticon-translator-chicago-web-career-040119/lib/emoticons.yml', "☜(⌒▽⌒)☞")
