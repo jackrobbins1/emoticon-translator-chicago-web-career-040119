@@ -12,7 +12,7 @@ def get_japanese_emoticon(path, emote)
     return puts "Sorry, that emoticon was not found"
   end
   hash["get_emoticon"][emote]
-  
+
 end
 
 def get_english_meaning(path, emote)
