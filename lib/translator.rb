@@ -1,6 +1,6 @@
 require "yaml"
 require "pry"
-emotes = YAML.load_file('home/fortunate-checkpoint-8501/emoticon-translator-chicago-web-career-040119/lib/emoticons.yml')
+emotes = YAML.load_file('~/fortunate-checkpoint-8501/emoticon-translator-chicago-web-career-040119/lib/emoticons.yml')
 binding.pry
 def load_library
   # code goes here
