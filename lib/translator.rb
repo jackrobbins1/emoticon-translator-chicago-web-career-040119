@@ -14,6 +14,7 @@ def get_japanese_emoticon(path, emote)
   hash["get_emoticon"][emote]
 
 end
+get_japanese_emoticon('/home/fortunate-checkpoint-8501/emoticon-translator-chicago-web-career-040119/lib/emoticons.yml', ">:(")
 
 def get_english_meaning(path, emote)
   hash = load_library(path)
