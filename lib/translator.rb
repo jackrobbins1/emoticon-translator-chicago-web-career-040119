@@ -9,6 +9,11 @@ end
 def get_japanese_emoticon(path, emote)
   hash = load_library(path)
   binding.pry
+  if hash["get_emoticon"].has_key?(emote) == true
+    return hash["get_emoticon"][emote]
+  else
+    return
+  end
   # if hash["get_emoticon"][emote] == nil
   #   return "Sorry, that emoticon was not found"
   # end
