@@ -1,13 +1,28 @@
-# require modules here
-
-def load_library
-  # code goes here
+require "yaml"
+require "pry"
+emotes = YAML.load_file('/home/fortunate-checkpoint-8501/emoticon-translator-chicago-web-career-040119/lib/emoticons.yml')
+#binding.pry
+def load_library(path)
+  YAML.load_file("#{path}")
 end
 
-def get_japanese_emoticon
-  # code goes here
-end
+def get_japanese_emoticon(path, emote)
+  hash = load_library(path)
+  if hash["get_emoticon"].has_key?(emote) == true
+    return hash["get_emoticon"][emote]
+  else
+    return "Sorry, that emoticon was not found"
+  end
 
-def get_english_meaning
-  # code goes here
 end
+get_japanese_emoticon('/home/fortunate-checkpoint-8501/emoticon-translator-chicago-web-career-040119/lib/emoticons.yml', ">:(")
+
+def get_english_meaning(path, emote)
+  hash = load_library(path)
+  if hash["get_meaning"].has_key?(emote) == true
+    return hash["get_meaning"][emote]
+  else
+    return "Sorry, that emoticon was not found"
+  end
+end
+get_english_meaning('/home/fortunate-checkpoint-8501/emoticon-translator-chicago-web-career-040119/lib/emoticons.yml', "☜(⌒▽⌒)☞")
