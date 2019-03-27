@@ -12,7 +12,7 @@ def get_japanese_emoticon(path, emote)
   if hash["get_emoticon"].has_key?(emote) == true
     return hash["get_emoticon"][emote]
   else
-    return
+    return "Sorry, that emoticon was not found"
   end
   # if hash["get_emoticon"][emote] == nil
   #   return "Sorry, that emoticon was not found"
